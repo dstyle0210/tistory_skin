@@ -1,0 +1,64 @@
+// UTILITY MIXINS
+// --------------------------------------------------
+
+.text-overflow {display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; zoom:1;}
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.opacity(@number){
+  @num : @number * 100;
+  
+  opacity:@number; /* all */
+  filter:alpha(opacity=@num); zoom:1; /* IE */  
+}
+
+// Webkit-style focus
+// ------------------
+.tab-focus() {
+  outline: thin dotted #333;  // Default
+  outline: 5px auto -webkit-focus-ring-color;  // Webkit
+  outline-offset: -2px;
+}
+
+// Center-align a block level element
+// ----------------------------------
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// IE7 inline-block
+// ----------------
+.ie7-inline-block() {
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
+}
+

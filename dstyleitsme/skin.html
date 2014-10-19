@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Dstyle - It's Me.</title>
+	<link rel="stylesheet" href="style.min.css" />
+	
+	<!-- FONT-GOOGLE -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- FONT-AWESOME -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- HTML5 적용. -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	
+	
+	
+</head>
+<body>
+<section class="dstyleItsme">
+	<h1>Dstyle-It's Me.</h1>
+	<div id="searchBox">
+		<h2>검색영역</h2>
+		<input type="text" class="search_keyword" name="search" value="" onkeypress="if (event.keyCode == 13) { try{window.location.href='/search/' + looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value = ''; return false;}catch(e){} }">
+		<a class="button small" onclick="try{window.location.href='/search/' + looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value = ''; return false;}catch(e){}">검색</a>
+	</div>
+	<hr />
+	<div>
+		<h2>SNS연결</h2>
+		<a href="">facebook</a>
+		<a href="">twitter</a>
+		<a href="">RSS</a>
+	</div>
+	<hr />
+	<div>
+		<i class="fa fa-cog"></i>
+		<h2>글로벌 네비게이션</h2>
+		<nav>
+			<ul>
+				<li><a href="">CodePack(0)</a>
+					<ul>
+						<li><a href="">Gist(0)</a></li>
+						<li><a href="">Plugin(0)</a></li>
+					</ul>
+				</li>
+				<li><a href="">Note(1)</a>
+					<ul>
+						<li><a href="">Knowhow(0)</a></li>
+						<li><a href="">Theory(1)</a></li>
+					</ul>
+				</li>
+				<li><a href="">Think(0)</a>
+					<ul>
+						<li><a href="">My(0)</a></li>
+						<li><a href="">Word(0)</a></li>
+						<li><a href="">Curation(0)</a></li>
+					</ul>
+				</li>
+				<li><a href="">Review(0)</a>
+					<ul>
+						<li><a href="">Wear(0)</a></li>
+						<li><a href="">Travel(0)</a></li>
+						<li><a href="">Beverage(0)</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+</section>
+
+
+<!-- 
+
+http://fortawesome.github.io/Font-Awesome/
+ -->
+</body>
+</html>
