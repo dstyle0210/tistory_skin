@@ -1,0 +1,86 @@
+/* 폰트설정 */
+/* Nanum Gothic :: Google earlyaccess */
+/* Oswald :: Google Font */
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body {
+  font-family: lgsreot;
+  line-height: 1.25;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  width: auto;
+  height: auto;
+}
+a {
+  cursor: pointer;
+}
+a:focus,
+a:active {
+  outline: 0;
+}
+a:link {
+  color: #333;
+  text-decoration: none;
+}
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+a:active {
+  color: 333;
+  text-decoration: none;
+}
+/* 변수설정 */
+/* 공통 함수설정 */
+.text-overflow {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  zoom: 1;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+h1 {
+  font-family: 'Nanum Gothic';
+  font-weight: 800;
+  font-size: 3em;
+  text-align: center;
+}
