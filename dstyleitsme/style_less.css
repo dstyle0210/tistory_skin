@@ -93,10 +93,10 @@ h1 {
   font-weight: 400;
   font-size: 3em;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 .dstyleItsme {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
 }
 .blockBox {
@@ -130,7 +130,7 @@ h1 {
   overflow: hidden;
 }
 .contWrap .articleWrap {
-  width: 735px;
+  width: 700px;
   float: left;
 }
 .contWrap .articleWrap .articleRep {
@@ -138,11 +138,11 @@ h1 {
   overflow: hidden;
 }
 .contWrap .articleWrap .articleRep h2 {
-  font-size: 21px;
+  font-size: 24px;
   font-family: 'Nanum Gothic';
   font-weight: 800;
   color: #000;
-  padding: 10px 0;
+  padding: 20px 0 10px;
   border-bottom: 1px dotted #000;
 }
 .contWrap .articleWrap .articleRep .articleInfoWrap {
@@ -166,6 +166,7 @@ h1 {
   padding-top: 20px;
   font-family: 'Nanum Gothic';
   font-weight: 400;
+  line-height: 1.5;
 }
 .contWrap .asideWrap {
   width: 200px;
@@ -181,7 +182,11 @@ h1 {
   padding: 20px 0;
   border-top: 1px dotted #000;
 }
+.asideWrap .asideArticle:first-child {
+  border-top: 0;
+}
 #countBox {
+  margin-top: 10px;
   width: 178px;
   font-family: 'Nanum Gothic';
   font-weight: 400;
@@ -433,6 +438,8 @@ h1 {
 .tagAuthorWrap {
   padding-top: 20px;
   font-size: 12px;
+  font-family: 'Nanum Gothic';
+  font-weight: 400;
 }
 .tagAuthorWrap .tagAuthorCase {
   width: 100%;
@@ -449,8 +456,8 @@ h1 {
 #paging {
   width: 100%;
   overflow: hidden;
-  border-top: 1px dotted #000;
-  padding-top: 10px;
+  border-top: 1px solid #000;
+  padding-top: 20px;
   text-align: center;
   font-size: 12px;
   height: 30px;
@@ -489,4 +496,46 @@ h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 12px;
+}
+.articleList {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+}
+.articleList h2 {
+  font-size: 24px;
+  font-family: 'Nanum Gothic';
+  font-weight: 800;
+  color: #000;
+  padding: 20px 0 10px;
+  border-bottom: 1px dotted #000;
+}
+.articleList ul li {
+  width: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  border-top: 1px dashed #ccc;
+}
+.articleList ul li span.date {
+  float: right;
+  display: inline-block;
+  padding-top: 25px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.articleList ul li a {
+  float: left;
+  display: inline-block;
+  padding: 15px 0;
+  font-family: 'Nanum Gothic';
+  font-weight: 700;
+}
+.articleList ul li a span {
+  color: #999;
+  font-size: 12px;
+}
+.articleList ul li:first-child {
+  border-top: 0;
 }

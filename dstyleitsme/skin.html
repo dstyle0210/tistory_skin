@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Dstyle - It's Me.</title>
-	<link rel="stylesheet" href="style.min.css" />
+	<title>[##_page_title_##] | [##_title_##]</title>
+	<link href="./style.css" rel="stylesheet" type="text/css" />
 	
 	<!-- FONT-GOOGLE -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
@@ -23,341 +23,115 @@
 	
 </head>
 <body>
+<s_t3>
 <section class="dstyleItsme">
-	<h1>Dstyle-It's Me.</h1>
+	<h1>[##_title_##]</h1>
 	
-	<!-- 검은색 배경 영역 :: START -->
-	<div class="blockBox">
-		<ul>
-			<li class="t_menu_link_1 first"><a href="http://">ABOUT ME</a></li>
-			<li class="t_menu_link_2"><a href="http://">CONTACT</a></li>
-			<li class="t_menu_link_3"><a href="http://">SERVICE</a></li>
-			<li class="t_menu_admin last"><a href="/admin">ADMIN</a></li>
-		</ul>
-	</div>
-	<!-- 검은색 배경 영역 :: END -->
-	<div class="blankBox"></div>
+<!-- 검은색 배경 영역 :: START -->
+<div class="blockBox">
+	[##_blog_menu_##]
+</div>
+<!-- 검은색 배경 영역 :: END -->
+<div class="blankBox"></div>
 	
-	
-	
+
 	<!-- 컨덴츠 영역 :: START -->
 	<section class="contWrap">
 		<!-- 아티클 영역 :: START -->
 		<div class="articleWrap">
-		
-			<article class="articleRep">
 			
-				
-				<h2><a href="/entry/반응형-표를-구현하기-위한-샘플들">반응형 표를 구현하기 위한 샘플들.</a></h2>
+			<s_list>
+			<!-- 리스트 영역 :: START -->
+		    <article class="articleList">
+		    	<h2><span>"[##_list_conform_##]"</span>에 해당되는 글 <span>[##_list_count_##]</span>건</h2>
+	    		<ul>
+	    			<s_list_rep>
+	      			<li><a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a> <span class="date"><i class="fa fa-pencil"></i> [##_list_rep_regdate_##]</span></li>
+	      			</s_list_rep>
+	      		</ul>
+		    </article>
+		    <!-- 리스트 영역 :: END -->
+		    </s_list>
+		    
+		    <s_rplist>
+		    <!-- 댓글 리스트 영역 :: START -->
+		    <article class="articleList">
+		    	<h2><span>"[##_rplist_conform_##]"</span>에 해당되는 댓글 <span>[##_rplist_count_##]</span>건</h2>
+	    		<ul>
+	    			<s_rplist_rep>
+	      			<li><a href="[##_rplist_rep_link_##]">[##_rplist_rep_body_##] <span class="writer">by [##_rplist_rep_name_##]</span></a> <span class="date"><i class="fa fa-pencil"></i> [##_rplist_rep_regdate_##]</span> <span></span></li>
+	      			</s_rplist_rep>
+	      		</ul>
+		    </article>
+		    <!-- 리스트 영역 :: END -->
+			</s_rplist>
+			
+			
+			
+			<s_article_rep>
+			<article class="articleRep">
+				<h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
 				<div class="articleInfoWrap">
+					<s_ad_div>
 					<div class="adminOnly">
-						<a href="/admin/entry/edit/11?returnURL=/entry/%EB%B0%98%EC%9D%91%ED%98%95-%ED%91%9C%EB%A5%BC-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%83%98%ED%94%8C%EB%93%A4">수정</a>
-						<a href="#" onclick="editEntry(11,'/entry/%EB%B0%98%EC%9D%91%ED%98%95-%ED%91%9C%EB%A5%BC-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-%EC%9C%84%ED%95%9C-%EC%83%98%ED%94%8C%EB%93%A4'); return false;">수정(새창)</a>
-						<span style="margin-right:5px">(비공개) →</span><a href="#" onclick="changeVisibility(11, 2); return false;">공개로 변경합니다</a>
-						<a href="#" onclick="sendTrackback(11); return false;">트랙백</a>
-						<a href="#" onclick="deleteEntry(11); return false;">삭제</a>
+						<a href="[##_s_ad_m_link_##]">수정</a>
+						<a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a>
+						<span style="margin-right:5px">([##_s_ad_s1_label_##]) →</span><a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a>
+						<a href="#" onclick="[##_s_ad_t_onclick_##]">트랙백</a>
+						<a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
 					</div>
+					</s_ad_div>
 					<div class="dateCateWrap">
-						<span class="date">2014/11/06 11:57</span>
-						<span class="cate">CodePack/URL</span>
+						<span class="date">[##_article_rep_date_##]</span>
+						<span class="cate"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></span>
 					</div>
 				</div>
 				
-				
-				
-				
 				<div class="articleContent">
-					<!-- 아티클 치환자 영역 :: START -->
-					
-					<!-- 아티클 내용만 :: START -->
-					<p>반응형을 구현하다보면, 표영역을 보여주기 위한 공간이 부족한 현상이 자주 접하게 된다.
-					이때 해결을 하기 위한 몇가지 플러그인 및 패턴을 모아놓은 페이지.</p>
-					<!-- 아티클 내용만 :: END -->
-					
-
-
-
-
-
-
-<!-- 티스토리에서 인위적으로 넣는 코드들 :: START -->
-<style type="text/css">
-	.another_category { border: 1px solid #E5E5E5; padding: 10px 10px 5px; margin:10px 0; clear: both; }
-	.another_category h4 { font-size: 12px !important; margin: 0 !important; border-bottom: 1px solid #E5E5E5 !important; padding: 2px 0 6px !important; }
-	.another_category h4 a { font-weight: bold !important; }
-	.another_category table { table-layout: fixed; border-collapse: collapse; width: 100% !important; margin-top: 10px !important; }
-	* html .another_category table { width: auto !important; }
-	*:first-child+html .another_category table { width: auto !important; }
-	.another_category th, .another_category td { padding: 0 0 4px !important; }
-	.another_category th { text-align: left; font-size: 12px !important; font-weight: normal;  word-break: break-all; overflow: hidden; line-height: 1.5; }
-	.another_category td { text-align: right; width: 70px; font-size: 11px; }
-	.another_category th a { font-weight: normal; text-decoration: none; border: none !important; }
-	.another_category th a.current{ font-weight: bold; text-decoration: none !important; border-bottom: 1px solid !important; }
-	.another_category th span { font-weight: normal; text-decoration: none; font: 10px Tahoma, Sans-serif; border: none !important; }
-
-	.another_category_color_gray, .another_category_color_gray h4 { border-color: #E5E5E5 !important; }
-	.another_category_color_gray * { color: #909090 !important; }
-	.another_category_color_gray th a.current{border-color:#909090 !important;}
-	.another_category_color_gray h4, .another_category_color_gray h4 a { color: #737373 !important; }
-
-
-	.another_category_color_red, .another_category_color_red h4 { border-color: #F6D4D3 !important;  }
-	.another_category_color_red * { color: #E86869 !important; }
-	.another_category_color_red th a.current{border-color:#E86869 !important;}
-	.another_category_color_red h4, .another_category_color_red h4 a { color: #ED0908 !important; }
-
-
-	.another_category_color_green, .another_category_color_green h4 { border-color: #CCE7C8 !important; }
-	.another_category_color_green * { color: #64C05B !important; }
-	.another_category_color_green th a.current{border-color:#64C05B !important;}
-	.another_category_color_green h4, .another_category_color_green h4 a { color: #3EA731 !important; }
-
-
-	.another_category_color_blue, .another_category_color_blue h4 { border-color: #C8DAF2 !important; }
-	.another_category_color_blue * { color: #477FD6 !important; }
-	.another_category_color_blue th a.current{border-color:#477FD6 !important;}
-	.another_category_color_blue h4, .another_category_color_blue h4 a { color: #1960CA !important; }
-
-
-	.another_category_color_violet, .another_category_color_violet h4 { border-color: #E1CEEC !important;  }
-	.another_category_color_violet * { color:#9D64C5 !important; }
-	.another_category_color_violet th a.current{border-color:#9D64C5 !important;}
-	.another_category_color_violet h4, .another_category_color_violet h4 a { color: #7E2CB5 !important; }
-</style>
-
-
-
-
-
-
-
-
-<div class="entry-ccl" style="clear: both; text-align: right; margin-bottom: 10px">
-	<img id="ccl-icon-10-0" class="entry-ccl-by" src="http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/editor/ccl_black01.png" onmouseover="tistoryCcl.show(this, 1)" onmouseout="tistoryCcl.hide()" alt="저작자 표시"/>
-	<img id="ccl-icon-10-1" class="entry-ccl-nc" src="http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/editor/ccl_black02.png" onmouseover="tistoryCcl.show(this, 1)" onmouseout="tistoryCcl.hide()" alt="비영리"/>
-	<img id="ccl-icon-10-2" class="entry-ccl-nd" src="http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/editor/ccl_black03.png" onmouseover="tistoryCcl.show(this, 1)" onmouseout="tistoryCcl.hide()" alt="변경 금지"/>
-	<!--
-	<rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-		<Work rdf:about="">
-			<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/" />
-		</Work>
-		<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/">
-			<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
-			<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
-			<requires rdf:resource="http://web.resource.org/cc/Notice"/>
-			<requires rdf:resource="http://web.resource.org/cc/Attribution"/>
-			<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/>
-		</License>
-	</rdf:RDF>
-	-->
-</div>
-<script type="text/javascript">
-if(/MSIE [0-6]\./.test(navigator.userAgent)){for(var i=0;i<3;i++){var el=document.getElementById('ccl-icon-10-'+i);el.style.filter='progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'+el.src+'",sizingMethod="image")';el.src='http://i1.daumcdn.net/cfs.tistory/v/0/static/admin/form/s.gif';}}
-</script>
-<fieldset style="margin:20px 0px 20px 0px;padding:5px;"><legend><span><strong>Creative Commons License</strong></span></legend><!--Creative Commons License--><div style="float: left; width: 88px; margin-top: 3px;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/" target="_blank"><img alt="Creative Commons License" style="border-width: 0" src="http://i.creativecommons.org/l/by-nc-nd/2.0/kr/88x31.png"/></a></div><div style="margin-left: 92px; margin-top: 3px; text-align: justify;">이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/" target="_blank">크리에이티브 커먼즈 코리아 저작자표시-비영리-변경금지 2.0 대한민국 라이선스</a>에 따라 이용하실 수 있습니다.
-			<!-- Creative Commons License-->
-			<!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-			<Work rdf:about="">
-			<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/2.0/kr/" />
-			</Work>
-			<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/">
-			<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
-			<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
-			<requires rdf:resource="http://web.resource.org/cc/Notice"/>
-			<requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/></License></rdf:RDF> --></div></fieldset>
-			
-			
-			
-
-
-
-
-<div class="another_category another_category_color_gray">
-<h4>'<a href="/category/CodePack">CodePack</a>&nbsp;>&nbsp;<a href="/category/CodePack/URL">URL</a>' 카테고리의 다른 글</h4>
-<table>
-<tr>
-<th>
-<a href="http://dstyleitsme.tistory.com/entry/반응형-표를-구현하기-위한-샘플들"  class ="current" >반응형 표를 구현하기 위한 샘플들.</a>&nbsp;&nbsp;<span>(0)</span>
-</th>
-<td>
-2014/11/06</td>
-</tr>
-</table></div>
-<!-- 티스토리에서 인위적으로 넣는 코드들 :: END -->
-			
-
-
-
-<!-- 작성자 , 태그영역 :: START -->
-<div class="tagAuthorWrap"><div class="tagAuthorCase">
-	<div class="tagTrail">
-		<i class="fa fa-tags"></i>
-		<a href="/tag/RWD" rel="tag">RWD</a>, <a href="/tag/반응형웹" rel="tag">반응형웹</a>, <a href="/tag/플러그인" rel="tag">플러그인</a>
-	</div>
-	<div class="author">
-		<span class="text">Posted by </span>디스타일 Dstyle
-	</div>
-</div></div>
-<!-- 작성자 , 태그영역 :: END -->
-
-
-
-		
-	
-	
+					[##_article_rep_desc_##]
 				</div> <!-- //articleContent -->
 				
+				<!-- 작성자 , 태그영역 :: START -->
+				<div class="tagAuthorWrap"><div class="tagAuthorCase">
+					<s_tag_label>
+					<div class="tagTrail">
+						<i class="fa fa-tags"></i>
+						[##_tag_label_rep_##]
+					</div>
+					</s_tag_label>
+					<div class="author">
+						<span class="text">Posted by </span> [##_article_rep_author_##]
+					</div>
+				</div></div>
+				<!-- 작성자 , 태그영역 :: END -->
 			</article>
+			</s_article_rep>
 			
-			
-			
-<!-- 페이징 :: START -->			
-<div id="paging">
-	<a  class="no-more-prev" id="prevPage"><i class="fa fa-chevron-left"></i> Prev</a>
-	
-	<a  class="num"> <span class="selected" >1</span></a>
-	
-	<a href='?page=2' class="num"> <span>2</span></a>
-	
-	<a href='?page=3' class="num"> <span>3</span></a>
-	
-	<a href='?page=4' class="num"> <span>4</span></a>
-	
-	<a href='?page=5' class="num"> <span>5</span></a>
-	 <span class="interword">...</span> 
-	<a href='?page=11' class="num"> <span>11</span></a>
-	
-	<a href='?page=2' class="" id="nextPage">Next <i class="fa fa-chevron-right"></i></a>
-</div>
-<!-- 페이징 :: END -->
-<!-- 
-<s_paging>
-<div id="paging">
-	<a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage"><span>‹</span> Prev</a>
-	<s_paging_rep>
-	<a [##_paging_rep_link_##] class="num"> [##_paging_rep_link_num_##]</a>
-	</s_paging_rep>
-	<a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">Next <span>›</span></a>
-</div>
-</s_paging>
-
- -->
+			<!-- 페이징 :: START -->
+			<s_paging>
+			<div id="paging">
+				<a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage"><i class="fa fa-chevron-left"></i> Prev</a>
+				<s_paging_rep>
+				<a [##_paging_rep_link_##] class="num"> [##_paging_rep_link_num_##]</a>
+				</s_paging_rep>
+				<a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">Next <i class="fa fa-chevron-right"></i></a>
+			</div>
+			</s_paging>
+			<!-- 페이징 :: END -->
  
 		</div>
 		<!-- 아티클 영역 :: END -->
-		
+	
 		<!-- 사이드바 영역 :: START -->
 		<aside class="asideWrap">
-		
-			<div class="asideArticle" id="countBox">
-				<h2>VISITOR COUNT</h2>
-				<dl>
-					<dt>Total :</dt>
-					<dd>647,258</dd>
-					<dt>Today :</dt>
-					<dd>647,258</dd>
-					<dt>Yesterday :</dt>
-					<dd>647,258</dd>
-				</dl>
-			</div>
-			
-			<div class="asideArticle" id="searchBox">
-				<h2>POST SEARCH</h2>
-				<div class="searchInput">
-					<input type="text" class="search_keyword" name="search" value="" onkeypress="if (event.keyCode == 13) { try{window.location.href='/search/' + looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value = ''; return false;}catch(e){} }">
-					<a href="" onclick="try{window.location.href='/search/' + looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value = ''; return false;}catch(e){}" class="button small"><i class="fa fa-search"></i><span class="tts">검색</span></a>
-				</div>
-			</div>
-			
-			<div class="asideArticle" id="tags">
-				<h2>TAGs</h2>
-				<ul>
-					<li><a href="/tag/웹%20브라우저" class="cloud1"> 웹 브라우저</a></li>
-					<li><a href="/tag/AhnLab%20V3" class="cloud2"> AhnLab V3</a></li>			
-					<li><a href="/tag/인터넷" class="cloud2"> 인터넷</a></li>				
-					<li><a href="/tag/업데이트" class="cloud2"> 업데이트</a></li>				
-					<li><a href="/tag/시작%20프로그램" class="cloud2"> 시작 프로그램</a></li>				
-					<li><a href="/tag/Internet%20Explorer" class="cloud2"> Internet Explorer</a></li>				
-					<li><a href="/tag/악성코드" class="cloud2"> 악성코드</a></li>				
-					<li><a href="/tag/Windows%20작업%20관리자" class="cloud2"> Windows 작업 관리자</a></li>				
-					<li><a href="/tag/이용약관" class="cloud2"> 이용약관</a></li>				
-					<li><a href="/tag/자동%20연장%20결제" class="cloud2"> 자동 연장 결제</a></li>				
-					<li><a href="/tag/검색%20도우미" class="cloud2"> 검색 도우미</a></li>				
-					<li><a href="/tag/월정액" class="cloud2"> 월정액</a></li>				
-					<li><a href="/tag/서비스" class="cloud3"> 서비스</a></li>				
-					<li><a href="/tag/BHO" class="cloud3"> BHO</a></li>				
-					<li><a href="/tag/삭제" class="cloud3"> 삭제</a></li>				
-					<li><a href="/tag/영화" class="cloud3"> 영화</a></li>				
-					<li><a href="/tag/보안%20패치" class="cloud3"> 보안 패치</a></li>				
-					<li><a href="/tag/추가%20기능%20관리" class="cloud3"> 추가 기능 관리</a></li>				
-					<li><a href="/tag/Microsoft" class="cloud3"> Microsoft</a></li>				
-					<li><a href="/tag/취약점" class="cloud3"> 취약점</a></li>				
-					<li><a href="/tag/스폰서" class="cloud3"> 스폰서</a></li>				
-					<li><a href="/tag/제휴" class="cloud3"> 제휴</a></li>				
-					<li><a href="/tag/개인정보" class="cloud3"> 개인정보</a></li>				
-					<li><a href="/tag/광고" class="cloud3"> 광고</a></li>				
-					<li><a href="/tag/마이크로소프트" class="cloud3"> 마이크로소프트</a></li>				
-					<li><a href="/tag/PC%20사용%20흔적%20검사" class="cloud3"> PC 사용 흔적 검사</a></li>				
-					<li><a href="/tag/광고창" class="cloud3"> 광고창</a></li>				
-					<li><a href="/tag/한국인터넷진흥원" class="cloud3"> 한국인터넷진흥원</a></li>				
-					<li><a href="/tag/팝업창" class="cloud3"> 팝업창</a></li>				
-					<li><a href="/tag/보안" class="cloud4"> 보안</a></li>				
-					<li><a href="/tag/안철수연구소" class="cloud4"> 안철수연구소</a></li>				
-					<li><a href="/tag/해지%20신청" class="cloud4"> 해지 신청</a></li>				
-					<li><a href="/tag/휴대폰/ARS%20결제중재센터" class="cloud4"> 휴대폰/ARS 결제중재센터</a></li>				
-					<li><a href="/tag/1372%20소비자상담센터" class="cloud4"> 1372 소비자상담센터</a></li>				
-					<li><a href="/tag/네이버" class="cloud4"> 네이버</a></li>				
-					<li><a href="/tag/naver" class="cloud4"> naver</a></li>				
-					<li><a href="/tag/도구%20모음%20및%20확장%20프로그램" class="cloud4"> 도구 모음 및 확장 프로그램</a></li>				
-					<li><a href="/tag/결제창" class="cloud4"> 결제창</a></li>				
-					<li><a href="/tag/보안%20취약점" class="cloud4"> 보안 취약점</a></li>				
-					<li><a href="/tag/블로그" class="cloud4"> 블로그</a></li>
-				</ul>
-			</div>
-			
-			
-			
+		<s_sidebar>
+		<!-- 사이드 바 -->
+			<s_sidebar_element>
+			<!-- 카테고리 -->
 			<div class="asideArticle" id="categoryNav">
 				<h2>CATEGORY</h2>
 				<nav>
-					<ul>
-						<li><a href="/category">It's Me <span class="c_cnt">(11)</span></a>
-							<ul>
-								<li><a href="/category/About%20Me">About Me <span class="c_cnt">(0)</span></a></li>
-								<li>
-									<a href="/category/CodePack">CodePack <span class="c_cnt">(1)</span></a>
-									<ul>
-										<li><a href="/category/CodePack/Gist">Gist <span class="c_cnt">(0)</span></a></li>
-										<li><a href="/category/CodePack/Plugin">Plugin <span class="c_cnt">(0)</span></a></li>
-										<li><a href="/category/CodePack/URL">URL <span class="c_cnt">(1)</span></a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="/category/Note">Note <span class="c_cnt">(1)</span></a>
-									<ul>
-										<li><a href="/category/Note/Knowhow">Knowhow <span class="c_cnt">(0)</span></a></li>
-										<li><a href="/category/Note/Theory">Theory <span class="c_cnt">(1)</span></a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="/category/Think">Think <span class="c_cnt">(0)</span></a>
-									<ul>
-										<li><a href="/category/Think/My">My <span class="c_cnt">(0)</span></a></li>
-										<li><a href="/category/Think/Word">Word <span class="c_cnt">(0)</span></a></li>
-										<li><a href="/category/Think/Curation">Curation <span class="c_cnt">(0)</span></a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="/category/Review">Review <span class="c_cnt">(0)</span></a>
-									<ul>
-										<li><a href="/category/Review/Wear">Wear <span class="c_cnt">(0)</span></a></li>
-										<li><a href="/category/Review/Travel">Travel <span class="c_cnt">(0)</span></a></li>
-										<li><a href="/category/Review/Beverage">Beverage <span class="c_cnt">(0)</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
+					[##_category_list_##]
 				</nav>
 			</div>
 			<script>
@@ -368,284 +142,188 @@ if(/MSIE [0-6]\./.test(navigator.userAgent)){for(var i=0;i<3;i++){var el=documen
 				$("#categoryNav>nav>ul>li>ul>li>ul>li").addClass("navDep2");
 			});
 			</script>
+			</s_sidebar_element>
+			
+			<s_sidebar_element>
+			<!-- 링크 -->
+			<div class="asideArticle" id="myLink">
+				<h2>MY LINK</h2>
+				<div class="recentList">
+					<ul>
+						<s_link_rep>
+						<li><a href="[##_link_url_##]" onclick="window.open(this.href); return false">[##_link_site_##]</a></li>
+						</s_link_rep>
+					</ul>
+				</div>
+			</div>
+			</s_sidebar_element>
+			
+			<s_sidebar_element>
+			<!-- 검색 -->
+			<div class="asideArticle" id="searchBox">
+				<h2>POST SEARCH</h2>
+				<div class="searchInput">
+					<s_search>
+					<input type="text" class="search_keyword" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+					<a href="#" onclick="[##_search_onclick_submit_##]"><i class="fa fa-search"></i><span class="tts">검색</span></a>
+					</s_search>
+				</div>
+			</div>
+			</s_sidebar_element>
+			
+			<s_sidebar_element>
+			<!-- 방문자통계 -->
+			<div class="asideArticle" id="countBox">
+				<h2>VISITOR COUNT</h2>
+				<dl>
+					<dt>Total :</dt>
+					<dd>[##_count_total_##]</dd>
+					<dt>Today :</dt>
+					<dd>[##_count_today_##]</dd>
+					<dt>Yesterday :</dt>
+					<dd>[##_count_yesterday_##]</dd>
+				</dl>
+			</div>
+			</s_sidebar_element>
+			
+			<s_sidebar_element>
+			<!-- 태그 -->
+			<div class="asideArticle" id="tags">
+				<h2>TAGs</h2>
+				<ul>
+					<s_random_tags>
+					<li><a href="[##_tag_link_##]" class="[##_tag_class_##]"> [##_tag_name_##]</a></li>
+					</s_random_tags>
+				</ul>
+			</div>
+			</s_sidebar_element>
 			
 			
 			
+			
+			
+			<s_sidebar_element>
+			<!-- SNS -->
 			<div class="asideArticle">
 				<h2>SNS</h2>
 				<a href=""><i class="fa fa-facebook-square fa-2x"></i><span class="tts">facebook</span></a>
 				<a href=""><i class="fa fa-twitter-square fa-2x"></i><span class="tts">twitter</span></a>
 				<a href=""><i class="fa fa-rss-square fa-2x"></i><span class="tts">RSS</span></a>
 			</div>
+			</s_sidebar_element>
 			
+			<s_sidebar_element>
+			<!-- 최근게시물 -->
 			<div class="asideArticle" id="recentList">
 				<h2>RECENT LIST</h2>
 				<div class="recentList">
 					<ul>
-						<li><a href="/5665"> MS Windows 보안 업데이트 :...</a> <span class="cnt"><span id="commentCountOnRecentEntries5665"></span></span></li>
-						<li><a href="/5664"> 해외 광고 프로그램 : ClickM...</a> <span class="cnt"><span id="commentCountOnRecentEntries5664"></span></span></li>
-						<li><a href="/4997"> 벌새 블로그가 선정한 2014년...</a> <span class="cnt"><span id="commentCountOnRecentEntries4997">(38)</span></span></li>
-						<li><a href="/5663"> 알약(ALYac) 윈도우 업데이트...</a><span class="cnt"><span id="commentCountOnRecentEntries5663"></span></span></li>
-						<li><a href="/5662"> Malwarebytes Anti-Malware...</a><span class="cnt"><span id="commentCountOnRecentEntries5662"></span></span></li>
+						<s_rctps_rep>
+						<li><a href="[##_rctps_rep_link_##]"> [##_rctps_rep_title_##]</a> <span class="cnt">[##_rctps_rep_rp_cnt_##]</span></li>
+						</s_rctps_rep>
 					</ul>
 				</div>
 			</div>
+			</s_sidebar_element>
 			
-			
+			<s_sidebar_element>
+			<!-- 최근트랙백 -->
 			<div class="asideArticle" id="recentTrackback">
 				<h2>RECENT TRACKBACK</h2>
 				<div class="recentList">
 					<ul>
+						<s_rcttb_rep>
 						<li>
-							<a href="/416#trackback2573225">alarme maison...</a>
+							<a href="[##_rcttb_rep_link_##]">[##_rcttb_rep_desc_##]</a>
 							<div class="info_wrap">
-								<span class="name">alarme maison..</span>
-								<span class="date">12:30</span>
+								<span class="name">[##_rcttb_rep_name_##]</span>
+								<span class="date">[##_rcttb_rep_time_##]</span>
 							</div>
 						</li>
-						<li><a href="/3707#trackback2475358">nProtect Netiz...</a><div class="info_wrap"><span class="name">Ec0nomist's Lab.</span><span class="date">11/07</span></div></li>
-						<li><a href="/3707#trackback2475202">nProtect Netiz...</a><div class="info_wrap"><span class="name">울지않는벌새 :..</span><span class="date">11/07</span></div></li>
-						<li><a href="/3695#trackback2407409">스파이앱의 근...</a><div class="info_wrap"><span class="name">Dipped, Malwar..</span><span class="date">10/30</span></div></li>
-						<li><a href="/3671#trackback2304533">2014년 10월 Wi...</a><div class="info_wrap"><span class="name">울지않는벌새 :..</span><span class="date">10/16</span></div></li>								
+						</s_rcttb_rep>
 					</ul>
 				</div>
 			</div>
+			</s_sidebar_element>
 			
+			<s_sidebar_element>
+			<!-- 최근댓글 -->
 			<div class="asideArticle" id="recentComment">
 				<h2>RECENT COMMENT</h2>
 				<div class="recentList">
 					<ul>
-						<li><a href="/1085#comment8984812">최고십니다...</a><div class="info_wrap"><span class="name">환이</span><span class="date">11/07</span></div></li>
-						<li><a href="/691#comment8964148">저기..빨간줄로 끄어져있는건...</a><div class="info_wrap"><span class="name">저기..</span><span class="date">11/03</span></div></li>
-						<li><a href="/1084#comment8960131">저도 이거 걸렷을때,바탕화면...</a><div class="info_wrap"><span class="name">한번 걸렷던 사람</span><span class="date">11/02</span></div></li>
-						<li><a href="/764#comment8935139">혹시 샌드박스를 이용하면 동...</a><div class="info_wrap"><span class="name">달</span><span class="date">10/29</span></div></li>
-						<li><a href="/758#comment8866908">한글프로그램 설치가 무엇인가...</a><div class="info_wrap"><span class="name">팽이</span><span class="date">10/19</span></div></li>
+						<s_rctrp_rep>
+						<li><a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a><div class="info_wrap"><span class="name">[##_rctrp_rep_name_##]</span><span class="date">[##_rctrp_rep_time_##]</span></div></li>
+						</s_rctrp_rep>
 					</ul>
 				</div>
 			</div>
+			</s_sidebar_element>
 			
+			<s_sidebar_element>
+			<!-- 글보관함 -->
 			<div class="asideArticle" id="archiveList">
 				<h2>ARCHIVE</h2>
 				<div class="recentList">
 					<ul>
-						<li><a href="/archive/201404">2014/04 </a></li>
-						<li><a href="/archive/201403">2014/03 </a></li>
-						<li><a href="/archive/201401">2014/01 </a></li>
-						<li><a href="/archive/201312">2013/12 </a></li>
-						<li><a href="/archive/201311">2013/11 </a></li>
+						<s_archive_rep>
+						<li><a href="[##_archive_rep_link_##]">[##_archive_rep_date_##]</a></li><!-- <span class="cnt">([##_archive_rep_count_##])</span> -->
+						</s_archive_rep>
 					</ul>
 				</div>
 			</div>
-			
-			<div class="asideArticle" id="myLink">
-				<h2>MY LINK</h2>
-				<div class="recentList">
-					<ul>
-						<li><a href="http://devotionnoath.tistory.com" onclick="window.open(this.href); return false"> 글벌레의 블로그.</a></li>
-						<li><a href="http://hummingbird.tistory.com" onclick="window.open(this.href); return false"> 울지않는벌새 : Security, Mov...</a></li>
-						<li><a href="http://jquery.com" onclick="window.open(this.href); return false"> jQuery.</a></li>
-						<li><a href="http://fortawesome.github.io/Font-Awesome/" onclick="window.open(this.href); return false"> Font Awesome, the iconic fon...</a></li>
-					</ul>
-				</div>
-			</div>
+			</s_sidebar_element>
 			
 			
+			<s_sidebar_element>
+			<!-- 달력 -->
 			<div class="asideArticle" id="calendar">
 				<h2>CALENDAR</h2>
 				<div class="calendarWrap">
+					<s_custom_calendar>
 					<div class="calTitle">
-						<a href="/archive/201411" class="calendar_month" title="현재 달의 달력을 보여줍니다.">2014.11</a>
+						<a href="[##_this_month_##]" class="calendar_month" title="현재 달의 달력을 보여줍니다.">[##_year_##].[##_month_##]</a>
 					</div>
-					
 					
 					<div class="calendarTable">
 						<table cellpadding="0" cellspacing="0" style="table-layout: fixed">
-							
+							<s_calendar_header>
 							<thead>
 								<tr>
-									
-									<th class="cal_week2">일</th>
-									
-									<th class="cal_week1">월</th>
-									
-									<th class="cal_week1">화</th>
-									
-									<th class="cal_week1">수</th>
-									
-									<th class="cal_week1">목</th>
-									
-									<th class="cal_week1">금</th>
-									
-									<th class="cal_week1">토</th>
-									
+									<s_calendar_header_item>
+									<th class="[##_class_##]">[##_title_##]</th>
+									</s_calendar_header_item>
 								</tr>
 							</thead>
-							
-							
+							</s_calendar_header>
+							<s_calendar_days>
 							<tbody>
-								
-								<tr class="cal_week">
-									
-									<td class="cal_day1">&nbsp;</td>
-									
-									<td class="cal_day1">&nbsp;</td>
-									
-									<td class="cal_day1">&nbsp;</td>
-									
-									<td class="cal_day1">&nbsp;</td>
-									
-									<td class="cal_day1">&nbsp;</td>
-									
-									<td class="cal_day1">&nbsp;</td>
-									
-									<td class="cal_day cal_day3">1</td>
-									
+								<s_calendar_week>
+								<tr class="[##_class_##]">
+									<s_calendar_days_item>
+									<td class="[##_class_##]">[##_day_##]</td>
+									</s_calendar_days_item>
 								</tr>
-								
-								<tr class="cal_week">
-									
-									<td class="cal_day cal_day3 cal_day_sunday">2</td>
-									
-									<td class="cal_day cal_day3">3</td>
-									
-									<td class="cal_day cal_day3">4</td>
-									
-									<td class="cal_day cal_day3">5</td>
-									
-									<td class="cal_day cal_day3">6</td>
-									
-									<td class="cal_day cal_day3">7</td>
-									
-									<td class="cal_day cal_day3">8</td>
-									
-								</tr>
-								
-								<tr class="cal_week">
-									
-									<td class="cal_day cal_day3 cal_day_sunday">9</td>
-									
-									<td class="cal_day cal_day3"><a class="cal_click" href="/archive/20141010">10</a></td>
-									
-									<td class="cal_day cal_day3">11</td>
-									
-									<td class="cal_day cal_day3">12</td>
-									
-									<td class="cal_day cal_day3">13</td>
-									
-									<td class="cal_day cal_day3">14</td>
-									
-									<td class="cal_day cal_day3">15</td>
-									
-								</tr>
-								
-								<tr class="cal_week cal_current_week">
-									
-									<td class="cal_day cal_day3 cal_day_sunday">16</td>
-									
-									<td class="cal_day cal_day3">17</td>
-									
-									<td class="cal_day cal_day3">18</td>
-									
-									<td class="cal_day cal_day4">19</td>
-									
-									<td class="cal_day cal_day3">20</td>
-									
-									<td class="cal_day cal_day3">21</td>
-									
-									<td class="cal_day cal_day3">22</td>
-									
-								</tr>
-								
-								<tr class="cal_week">
-									
-									<td class="cal_day cal_day3 cal_day_sunday">23</td>
-									
-									<td class="cal_day cal_day3">24</td>
-									
-									<td class="cal_day cal_day3">25</td>
-									
-									<td class="cal_day cal_day3">26</td>
-									
-									<td class="cal_day cal_day3">27</td>
-									
-									<td class="cal_day cal_day3">28</td>
-									
-									<td class="cal_day cal_day3">29</td>
-									
-								</tr>
-								
-								<tr class="cal_week">
-									
-									<td class="cal_day cal_day3 cal_day_sunday">30</td>
-									
-									<td class="cal_day2">&nbsp;</td>
-									
-									<td class="cal_day2">&nbsp;</td>
-									
-									<td class="cal_day2">&nbsp;</td>
-									
-									<td class="cal_day2">&nbsp;</td>
-									
-									<td class="cal_day2">&nbsp;</td>
-									
-									<td class="cal_day2">&nbsp;</td>
-									
-								</tr>
-								
+								</s_calendar_week>
 							</tbody>
-							
+							</s_calendar_days>
 						</table>
-						
-						
 					</div>
 					
 					
 					<div class="calLocation">
-						<div class="prevMonth"><a href="/archive/201410" class="calendar_prev" title="1개월 앞의 달력을 보여줍니다."><i class="fa fa-chevron-left"></i> <span>PREV</span></a></div>
-						<div class="nextMonth"><a href="/archive/201412" class="calendar_next" title="1개월 뒤의 달력을 보여줍니다."><span>NEXT</span> <i class="fa fa-chevron-right"></i></a></div>
+						<div class="prevMonth"><a href="[##_prev_month_##]" class="calendar_prev" title="1개월 앞의 달력을 보여줍니다."><i class="fa fa-chevron-left"></i> <span>PREV</span></a></div>
+						<div class="nextMonth"><a href="[##_next_month_##]" class="calendar_next" title="1개월 뒤의 달력을 보여줍니다."><span>NEXT</span> <i class="fa fa-chevron-right"></i></a></div>
 					</div>
 							
 							
-							
-						</div>
-						
-						
-						
-				<!-- <s_custom_calendar>
-							<div class="box_tit">
-								<h3 class="tit_calendar">calendar</h3>
-								<a href="[##_this_month_##]" class="calendar_month" title="현재 달의 달력을 보여줍니다.">[##_year_##].[##_month_##]</a>
-							</div>
-							<a href="[##_prev_month_##]" class="calendar_prev" title="1개월 앞의 달력을 보여줍니다."><span>이전달</span></a>
-							<table class="tt-calendar" cellpadding="0" cellspacing="0" style="table-layout: fixed">
-								<s_calendar_header>
-								<thead>
-									<tr>
-										<s_calendar_header_item>
-										<th class="[##_class_##]">[##_title_##]</th>
-										</s_calendar_header_item>
-									</tr>
-								</thead>
-								</s_calendar_header>
-								<s_calendar_days>
-								<tbody>
-									<s_calendar_week>
-									<tr class="[##_class_##]">
-										<s_calendar_days_item>
-										<td class="[##_class_##]">[##_day_##]</td>
-										</s_calendar_days_item>
-									</tr>
-									</s_calendar_week>
-								</tbody>
-								</s_calendar_days>
-							</table>
-							<a href="[##_next_month_##]" class="calendar_next" title="1개월 뒤의 달력을 보여줍니다."><span>다음달</span></a>
-							</s_custom_calendar> -->
+					</s_custom_calendar>		
+				</div>
 			</div>
+			</s_sidebar_element>
 			
 			
-			
-			
+		</s_sidebar>
 		</aside>
 		<!-- 사이드바 영역 :: END -->
 	</section>
@@ -656,11 +334,6 @@ if(/MSIE [0-6]\./.test(navigator.userAgent)){for(var i=0;i<3;i++){var el=documen
 	
 	
 </section>
-
-
-<!-- 
-
-http://fortawesome.github.io/Font-Awesome/
- -->
+</s_t3>
 </body>
 </html>
