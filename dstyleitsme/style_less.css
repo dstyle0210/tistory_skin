@@ -539,3 +539,12 @@ h1 {
 .articleList ul li:first-child {
   border-top: 0;
 }
+#notice li {
+  font-family: 'Nanum Gothic';
+  font-weight: 700;
+  font-size: 12px;
+  padding-bottom: 3px;
+}
+#notice li i {
+  padding-top: 2px;
+}
