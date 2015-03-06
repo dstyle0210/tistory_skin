@@ -107,6 +107,43 @@
 			</article>
 			</s_article_rep>
 			
+			<!-- 공지사항 아티클 영역 :: START -->
+			<s_notice_rep>
+			<article class="articleRep">
+				<h2><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h2>
+				<div class="articleInfoWrap">
+					<s_ad_div>
+					<div class="adminOnly">
+						<a href="[##_s_ad_m_link_##]">수정</a>
+						<a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a>
+						<span style="margin-right:5px">([##_s_ad_s1_label_##]) →</span><a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s2_label_##]</a>
+						<a href="#" onclick="[##_s_ad_t_onclick_##]">트랙백</a>
+						<a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+					</div>
+					</s_ad_div>
+					<div class="dateCateWrap">
+						<span class="date">[##_notice_rep_date_##]</span>
+						<span class="cate"><a href="#">Notice</a></span>
+					</div>
+				</div>
+				
+				<div class="articleContent">
+					[##_notice_rep_desc_##]
+				</div>
+				
+				<!-- 작성자 , 태그영역 :: START -->
+				<div class="tagAuthorWrap"><div class="tagAuthorCase">
+					<div class="author">
+						<span class="text">Posted by </span> [##_notice_rep_author_##]
+					</div>
+				</div></div>
+				<!-- 작성자 , 태그영역 :: END -->
+				
+			</article>
+			</s_notice_rep>
+			<!-- 공지사항 아티클 영역 :: END -->
+			
+			
 			<!-- 페이징 :: START -->
 			<s_paging>
 			<div id="paging">
